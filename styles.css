@@ -23,9 +23,10 @@ html {
 
 h1 {
     font-family: 'Tangerine', cursive;
-    font-size: 10vw;
-    padding: 5vw 0 5vw 30vw;
+    font-size: 20vw;
+    padding: 1vw 0 2vw 25vw;
     color: #C3B299;
+    text-shadow: 4px 4px #F7D08A;
 
 
 }
@@ -57,11 +58,12 @@ p {
     border-radius: 5px;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     padding: 1px 9px;
     margin: 1vw;
     font-size: 35px;
     z-index: 1001;
+    transition: 1s;
 }
 
 .hide-menu {
@@ -73,39 +75,44 @@ p {
     background-color: rgba(255, 255, 255, 0.6);
     z-index: 1000;
     display: none;
+    transition: 1s;
 }
 
 nav.menubar {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(247, 208, 138, 0.7);
     position: fixed;
-    right: 10.2vw;
-    top: 1vw;
+    left: 1vw;
+    top: 10vw;
     width: 60%;
     display: none;
     z-index: 1002;
-    text-align: center;
+    text-align: left;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 nav.menubar a {
-    color: white;
+    color: #C3B299;
     display: block;
     padding: 15px;
     text-decoration: none;
     font-family: 'Open-Sans', sans-serif;
     font-size: 19px;
+    transition: 0.5s;
 
 }
 
 nav.menubar a:hover {
-    background-color: #fff;
+    background-color: #FAF3DD;
     color: darkgrey;
+    border-style: solid;
+    border-color: #F7D08A;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
-nav.menubar a:active {
-    background-color: aquamarine;
-}
+
 
 #toggle-menu {
     display: none;
@@ -131,12 +138,14 @@ nav.menubar a:active {
 
     nav.menubar {
         display: block;
-        left: 20vw;
-        top: 0;
+        left: 0;
+        max-width: 10vw;
+        border-bottom-left-radius: 0;
+
     }
 
     nav.menubar a {
-        display: inline-block;
+        display: block;
     }
 }
 
@@ -457,11 +466,22 @@ nav.menubar a:active {
 
 /******** TEMA 2 *********/
 
+/*
+#tema2 .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-bottom: 1px solid #C3B299;
+    padding: 0 0 5vw 0;
+
+}
+*/
+
 #tema2 .column_top {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    flex-grow: 2;
+    flex-grow: 1;
     flex-basis: 200px;
     margin: 1vw;
     justify-content: space-between;
@@ -478,94 +498,273 @@ nav.menubar a:active {
     padding: 2vw;
 }
 
-@media screen and (max-width: 600px) {
-    #tema2 .column_top {
+@media screen and (max-width: 800px) {
+    #tema2 .container {
         flex-direction: column;
+        justify-content: center;
     }
+
+    #tema2 .column_middleright {
+        position: relative;
+        right: 8vw;
+    }
+
+    #tema2 .column_topright {
+        position: relative;
+        left: 8vw;
+    }
+
 }
 
-#tema2 .column_img {
+#tema2 .column_middle {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
+    flex-grow: 1;
+    flex-basis: 200px;
+    margin: 1vw;
+    justify-content: space-between;
+    background-color: #97B1A6;
+    color: #FAF3DD;
+    border-radius: 1vw;
+
+
+}
+
+#tema2 .column_middleleft {
+    padding: 2vw;
+}
+
+#tema2 .column_middleright {
+    padding: 2vw;
+
+}
+
+#tema2 img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    min-width: 400px;
+    max-width: 500px;
+
+
+}
+
+#tema2 .column_bottom {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #97B1A6;
     color: #FAF3DD;
     border-radius: 1vw;
     justify-content: center;
-    max-width: 500px;
+    margin: 2vw;
+    padding: 2vw;
+    justify-content: space-between;
 
 }
 
-
-#tema2 .column_middle {
-    position: relative;
-    max-width: 500px;
-    padding: 2vw;
+#tema2 .column_text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     flex-grow: 2;
     flex-basis: 200px;
-
-
-
-    /*
-    flex-wrap: wrap;
-    flex-grow: 3;
-    flex-basis: 500px;
     margin: 1vw;
     justify-content: space-between;
-    border-radius: 3vw;
-    align-items: center;
-*/
-
-
 }
 
-#tema2 .column_text {}
+#tema2 .text_left {
+    display: inline-block;
+    background-color: #97B1A6;
+    color: #FAF3DD;
+    flex-grow: 1;
+    flex-basis: 400px;
+    border-radius: 1vw;
+    border: 2vw;
+    padding: 0 3vw 2vw;
+    max-width: 500px;
+}
 
-#tema2 .column_middleleft {
-    /*
-    position: relative;
-    width: 50%;
-    float: left;
+#tema2 .text_right {
+    display: inline-block;
+    background-color: #97B1A6;
+    color: #FAF3DD;
+    flex-grow: 1;
+    flex-basis: 400px;
+    border-radius: 1vw;
+    border: 2vw;
+    padding: 0 3vw 2vw;
+    margin: 3vw 0 5vw;
+    max-width: 500px;
+}
+
+/*********** TEMA 3 ***************/
+
+#tema3 .column_slideshow {
+    background-color: #97B1A6;
+    color: #FAF3DD;
+    flex-grow: 2;
+    flex-basis: 300px;
+    border-radius: 1vw;
+    border: 5vw;
     padding: 2vw;
-    align-items: baseline;
-    justify-content: space-between;
-    background-color: gainsboro;
-    border-radius: 3vw;
-*/
+    margin: 1vw;
+    max-width: 500px;
+}
+
+.slideshow_skitser {
+    width: 100%;
+    padding-bottom: 80%;
+    padding-left: 5%;
+    position: relative;
 
 }
 
-#tema2 .column_middleleft .image {
+.slideshow_skitser img {
+    position: absolute;
+    animation: slideshow_animation_skitse 20s infinite;
     opacity: 1;
-    display: block;
+    width: 100%;
+    flex-grow: 1;
+    flex-basis: 500px;
+    max-width: 400px;
+
+}
+
+@keyframes slideshow_animation_skitse {
+    25% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0;
+    }
+}
+
+
+.slideshow_skitser img:nth-child(1) {
+    animation-delay: 5s;
+}
+
+.slideshow_skitser img:nth-child(2) {
+    animation-delay: 10s;
+}
+
+.slideshow_skitser img:nth-child(3) {
+    animation-delay: 15s;
+}
+
+.slideshow_skitser img:nth-child(4) {
+    animation-delay: 20s;
+}
+
+
+.slideshow_process {
+    width: 100%;
+    height: 0px;
+    padding-bottom: 60%;
+    position: relative;
+    margin: 2vw;
+
+}
+
+.slideshow_process img {
+    position: absolute;
+    animation: slideshow_butterfly_animation 45s infinite;
+    opacity: 0;
     width: 100%;
     height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
+    flex-grow: 1;
+    flex-basis: 500px;
+    max-width: 400px;
+
 }
 
-#tema2 .column_middleleft .center {
-    transition: .5s ease;
-    opacity: 0;
+@keyframes slideshow_butterfly_animation {
+    25% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+}
+
+.slideshow_process img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slideshow_process img:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.slideshow_process img:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.slideshow_process img:nth-child(4) {
+    animation-delay: 15s;
+}
+
+.slideshow_process img:nth-child(5) {
+    animation-delay: 20s;
+}
+
+.slideshow_process img:nth-child(6) {
+    animation-delay: 25s;
+}
+
+.slideshow_process img:nth-child(7) {
+    animation-delay: 30s;
+}
+
+.slideshow_process img:nth-child(8) {
+    animation-delay: 35s;
+}
+
+.slideshow_process img:nth-child(9) {
+    animation-delay: 40s;
+}
+
+.slideshow_baggrund {
+    width: 80%;
+    padding-bottom: 70%;
+    padding-left: 20%;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.slideshow_baggrund img {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    text-align: center;
-}
-
-#tema2 .column_middleleft:hover .image {
-    opacity: 0.3;
-}
-
-#tema2 .column_middleleft:hover .center {
+    animation: slideshow_animation_mood 30s infinite;
     opacity: 1;
+    width: 100%;
+    height: auto;
+    flex-grow: 1;
+    flex-basis: 500px;
+    max-width: 300px;
+
+
 }
 
-#tema2 .column_middleleft .texten {
-    padding: 3vw;
-    border-radius: 2vw;
-    color: black;
-    font-size: 16px;
+.slideshow_baggrund img:nth-child(5) {
+    animation-delay: 5s;
+}
 
+.slideshow_baggrund img:nth-child(4) {
+    animation-delay: 10s;
+}
+
+.slideshow_baggrund img:nth-child(3) {
+    animation-delay: 15s;
+}
+
+.slideshow_baggrund img:nth-child(2) {
+    animation-delay: 20s;
+}
+
+.slideshow_baggrund img:nth-child(1) {
+    animation-delay: 25s;
 }
