@@ -1,0 +1,119 @@
+img {
+    width: 100%;
+}
+
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+body,
+html {
+    background-color: #F4F4F1;
+    height: 100%;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Tangerine';
+    font-size: 7vw;
+    color: #5E7A8B;
+}
+
+h3 {
+    font-family: 'Tangerine';
+    font-size: 6vw;
+    color: #5E7A8B;
+}
+
+p {
+    font-family: 'Open-Sans', sans-serif;
+}
+
+
+/********* FORSIDE / INDEX *********/
+
+
+
+/*Image background*/
+.image-bg {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(billeder/portrait-mig.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 50%;
+    margin: 0 10vw;
+}
+
+/*text over image */
+.text-box {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+
+}
+
+/*MENU*/
+
+.hidden {
+    /*transform: translateY(-100%);*/
+    opacity: 0;
+}
+
+#menu_dropdown {
+    display: inline-block;
+    background-color: white;
+    width: 15%;
+    text-align: center;
+    padding: 1vw;
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    border-radius: 1vw;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    outline-color: lightgray;
+
+}
+
+
+#drop-button {
+    list-style-type: none;
+    transition: 0.5s;
+    position: absolute;
+    top: 73%;
+    left: 36vw;
+    background-color: white;
+    box-sizing: border-box;
+    padding-right: 1.5vw;
+    padding-bottom: 2vw;
+    padding-top: 1vw;
+    border-radius: 0 0 1vw 1vw;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+#drop-button a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#drop-button a:hover {
+    color: bisque;
+    font-family: 'Open Sans', sans-serif;
+
+}
