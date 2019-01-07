@@ -6,19 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grundlæggende webdesign</title>
     <link href="styles.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Tangerine" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="myheader">
-            <h1>Ann-Marie Greif</h1>
-            <img src="billeder/billedecvcropped.jpg">
+            <div class="text-box">
+                <h1>Ann-Marie Greif</h1>
+                <h2>www.greif.nu</h2>
+            </div>
+            <figure>
+                <img src="billeder/billedecvcropped.jpg" alt="Portrait">
+            </figure>
+            <!--
             <div class="hurtig">
                 <a href="index.html">Forside</a>
                 <a href="cv.html">CV</a>
             </div>
+-->
         </div>
         <input id="toggle-menu" type="checkbox" />
         <label for="toggle-menu" class="show-menu">&#9776;</label>
@@ -26,11 +33,13 @@
 
         <nav class="menubar">
 
-            <a href="index.html">Forside</a>
+
             <a href="#tema1">Tema 1: Webdesign</a>
             <a href="#tema2">Tema 2: Indhold</a>
-            <a href="">Tema 3: Animation</a>
-            <a href="">Tema 4: UX</a>
+            <a href="#tema3">Tema 3: Animation</a>
+            <a href="#tema4">Tema 4: UX</a>
+            <a href="cv.html">Om Mig</a>
+            <a href="index.html">Forside</a>
 
         </nav>
 
@@ -39,32 +48,24 @@
     <h1>Portfolio</h1>
 
     <section id="tema1">
-        <h2>Grundlæggende webdesign</h2>
+
 
         <div class="container">
-            <div class="column_left">
 
+            <div class="column_left">
+                <h2>Grundlæggende webdesign</h2>
                 <div class="column_top">
                     <h3>Arbetsprocess</h3>
 
                     <p>
-                        I detta tema har jag lärt mig grunderna till några av dem viktigaste verktygen inom multimediedesign-utbildningen. <br>
-
-                        Det startade med att vi blivit tilldelade en stilart, som vi skulle fördjupa oss i. Jag lärde mig om färgteori, typografier og layout-design. Jag gjorde ett moodboard och designade stilartsitet i Adobe InDesign. <br>
-                        Link till… <br>
-
-                        När designen varit på plats har jag börjat med att koda den första utgåvan av websitet med HTML och CSS i brackets. Jag har lärt mig om wireframes och layoutdiagrammer samt hur man gör ett website responsivt med hjälp av bland annat flex-box, srcset och media queries.
-                        <br>
-                        Till mitt website har jag också skapat en egen splash-bild och ikon i Adobe Photoshop, som passar in med den tilldelade stilarten. Med det har jag även fått kunskap om hur man editerar och optimerar bilder samt exporterar image-assets til websidor.
-
-                    </p>
-                </div>
-                <div class="column_middle">
-                    <h3>Reflektioner</h3>
+                        I det första temat blev vi introducerade för olika stilarter inom design. Vi lärde oss om typografier, färgteori samt layoutprinciper. Jag blev tilldelad stilarten dekonstruktivismen där jag valde att fokusera mycket på den grunge-aktiga stil man oftast ser inom stilarten.</p>
                     <p>
-                        blablabla
+                        När layoutet til sitet var färdigt gick vi igång med att koda i HTML och CSS. Jag har lärt mig om wireframes och layoutdiagrammer samt hur man gör ett website responsivt med hjälp av bland annat flex-box och media queries.
+                        Till mitt website har jag också skapat en egen splash-bild och ikon i Adobe Photoshop. Med det har jag även fått kunskap om hur man editerar och optimerar bilder samt exporterar image-assets til websidor.
+
                     </p>
                 </div>
+
                 <div class="column_bottom">
                     <h3>Links</h3><br><br>
                     <a href="http://greif.nu/kea/01-web/04-responsive_webdesign/01_04_02_responsive_v2/">Link til responsive-website</a><br>
@@ -97,50 +98,45 @@
 
     <section id="tema2">
 
-        <h2>Grundlæggende Indhold</h2>
+
 
         <div class="container">
+            <h2>Grundlæggende Indhold</h2>
             <div class="column_top">
                 <div class="column_topleft">
                     <h3>Pilotprojekt</h3>
-                    <p>blablabla</p>
+                    <p>I temats första vecka lärde vi oss om dramaturgi, interview- och videoteknik. I pilotprojektet skapade jag en videointerview där jag fick öva mig på olika framings och B-rolls. Genom att använda mig av Adobe Premiere Pro kunde jag efterföljande redigera klippen samt färg- och ljudjustera för att skapa den rätta stämningen. </p>
+                    <a href="videos/sund%20livsstil.mp4">Se hela videon här</a>
                 </div>
                 <div class="column_topright">
-                    <video width="400" controls>
-                        <source src="videos/sund%20livsstil.mp4" type="video/mp4">
-                    </video>
+                    <img src="billeder/screenshotJoe.JPG" alt="Joe">
                 </div>
             </div>
             <div class="column_middle">
                 <div class="column_middleleft">
-                    <p>lite text her</p>
+                    <h3>Redesign</h3>
+                    <p>Till redesign-uppgiften arbetade vi i grupp där vi skulle skapa en förbättrad version av en hemsida samt en verksamhetsvideo åt ett företag som vi själva tagit kontakt med.
+                        För att ta reda på hur olika människor upplevde den existerande hemsidan utförde vi två test: 5-sekunderstest och BERT-test. Resultatet av testerna var bland annat att den såg gammaldags ut och var svårläslig, något som vi valde att fokusera extra på i vår redesign av hemsidan. Det gammeldagliga intrycket ville vi behålla, då baren är känd för att vara en av de äldsta i Köpenhamn. Vi bytte dock ut bakgrunden till texterna på hemsidan med egna stillbilder från vinbaren som vi redigerat i Photoshop. </p>
+
+                    <div class="column_text">
+                        <h3>Links</h3>
+                        <br>
+                        <p>hej hej her ska det stå text</p>
+
+
+                    </div>
 
                 </div>
-                <div class="column_middleright">
-                    <video width="400" controls>
-                        <source src="http://greif.nu/kea/02-indhold/02-redesign/02_02_04_virksomhedsvideo.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-            <div class="column_bottom">
+                <div class="column_bottom">
 
-                <a target="_blank" href="billeder/Hviidsoriginal.JPG">
-                    <img src="billeder/Hviidsoriginal.JPG" alt="Hviids orginalside">
-                </a>
-                <a target="_blank" href="billeder/HviidsredesignJPG.JPG">
-                    <img src="billeder/HviidsredesignJPG.JPG">
-                </a>
-            </div>
-            <div class="column_text">
-                <div class="text_left">
-                    <h3>Reflektion over temaet</h3>
-                    <p>hej hej her ska det stå text</p>
-                </div>
-                <div class="text_right">
-                    <p>her kan man också skriva lite text</p>
+                    <a target="_blank" href="billeder/Hviidsoriginal.JPG">
+                        <img src="billeder/Hviidsoriginal.JPG" alt="Hviids orginalside">
+                    </a>
+                    <a target="_blank" href="billeder/HviidsredesignJPG.JPG">
+                        <img src="billeder/HviidsredesignJPG.JPG" alt="Hviids redesign">
+                    </a>
                 </div>
             </div>
-
         </div>
 
     </section>
@@ -151,20 +147,34 @@
             <h2>Tema 3: Animation</h2>
             <div class="column_left">
                 <div class="text_box">
-                    <p>her kan det stå text</p>
+                    <p>I tema 3s första del lärde vi bland annat om aktivitetsdiagram, karaktärdesign och scenografi, som skulle bli grunden till det spel som vi skulle skapa.
+                        Eftersom jag tidigare aldrig arbetat med Adobe Illustrator eller med vektor-grafik valde jag att hålla mig till stilen flat-design, som man tydligt kan se på titel-texten samt på träden i spelbakgrunden. Jag ville skapa ett spel som främst tilltalar yngre barn och har därför fokuserat mycket på ljusa, glada färger, enkla geometriska former och söta, lekfulla figurer.
+                        <br>
+                        För att göra det enklare att förstå spelets struktur har vi lärt oss om state machine diagram, som är mer detaljerad än aktivitetsdiagrammet. Den har varit till stor hjälp när jag senare började koda spelet i Javascript. Med hjälp av bland annat bakgrundsmusik, egna ljud-effekter och animationer, har jag skapat ett fungerande spel som har både tidsgräns och liv. </p>
+                    <h3>Links</h3>
+                    <p>
+                        Spela spelet här
+                    </p>
+                    <p>Se dokumentationen här</p>
                 </div>
                 <div class="column_images">
-                    <img src="billeder/titelskaerm.jpg">
-                    <img src="billeder/spilleskaerm.jpg">
+                    <img src="billeder/titelskaerm.jpg" alt="titelskaerm">
+                    <img src="billeder/spilleskaerm.jpg" alt="spilleskaerm">
 
                 </div>
             </div>
             <div class="column_right">
                 <div class="column_sharing">
-                    <img src="billeder/sharing_titel.JPG">
+                    <img src="billeder/sharing_titel.JPG" alt="Sharing">
                 </div>
-                <div class="text_box">
-                    <p>her kan det stå text</p>
+                <div class="text_box2">
+                    <p>Till gruppeprojektet skapade vi ett spel för privatsnak.dk om ämnet sex och samlevnad med fokus på ämnet bilddelning på nätet för åldrarna 13-15 år. <br>
+                        Vi var alla eniga om att man i den åldern har ett brett socialt liv på de sociala medier och vi hade därför som utgångspunkt att skapa ett spel som användaren kan relatera till. Förmålet var att skapa olika moraliska dilemman som man kom igenom i spelet, som kunde vara lärorikt men även en gnutta humoristisk. <br>
+                        Designen blev flat-design, med samma form och utseende som iPhone samt de mest populära apparna som ungdomar använder idag. Vi höll oss till de typiska färgpalett inom flat-design i själva spelet, men till titel- och slutskärm använde vi de färger som privatsnak.dk har på deras hemsida. <br>
+                        Till projektet använde vi oss mycket av de kunskaper vi fått från de första 3 veckorna i temat. Tillsammans skapade vi ett fungerande spel som vi även fick lov till att presentera för målgruppen på en fernisering. </p>
+                    <h3>Links</h3>
+                    <p>Spela spelet här</p>
+                    <p>Se dokumentationen här</p>
                 </div>
             </div>
         </div>
@@ -172,19 +182,39 @@
 
     <section id="tema4">
         <div class="container">
-            <h2>Tema 4: UX</h2>
-            <div class="column">
-                <div class="column_left">
-                    <p>hej-venster</p>
-                </div>
-                <div class="column_right">
-                    <p>hej-højer</p>
-                </div>
+
+            <div class="text_column">
+                <p>I det sista temats första del har vi undersökt hur man kan förbättra och effektivisera läroplattformen Fronter.<br>
+                    Jag började med att undersöka målsättningarna för kunden (KEA och Frederikke Bender) med hjälp av bland annat SMART-modellen. Därefter har jag även skapat en lista över Fronters funktionaliteter och en sitemap.
+                    Med User briefen som utgångspunkt utförde jag brugertest av Fronter i form av ett "tänka-högt-test" på 3 personer, analyserade testresultaterna samt undersökte hur konkurrenterna gör.
+                    <p>
+                        Med den nya kunskapen vi fått från User researchen gick vi in i design-sprint veckan där jag skapade en prototype av fronter i Adobe XD. Mitt huvudfokus var att skapa en mer användarvänlig framsida, samt ett effektivare system för undervisningsmaterial och uppgifter. Därefter utvecklade vi tillsammans i grupp en webprototype av fronter. </p>
+                    <h3>Links</h3>
+                    <p>Se User Research</p>
+                    <p>Se Prototypen</p>
+
+
+
+            </div>
+            <div class="slide_column">
+
+                <img src="billeder/prototype_fronter.JPG" alt="prototype-fronter">
+                <!--                    <img src="billeder/prototype_fronter2.JPG" alt="prototype-fronter2">-->
+
+            </div>
+        </div>
+        <div class="column">
+
+            <div class="image-left">
+                <img src="billeder/chacha1.JPG" alt="chacha">
             </div>
 
-
+            <div class="text-right">
+                <p>Den sista delen av temat arbetade vi återigen i grupp för att skapa en Native App för KEA. Vi blev överens om att göra en "challenge-app" som skulle göra fredagsbaren till ett ännu större nöje. Vi följde stegen inom design-sprint fasen och utförde bland annat sketch, artmuseum och decide för att lägga grunden till designen av app-prototypen. </p>
+            </div>
 
         </div>
+
 
     </section>
     <script src="script.js"></script>

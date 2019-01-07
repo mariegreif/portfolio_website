@@ -22,11 +22,13 @@ html {
 }
 
 h1 {
+    /*
     font-family: 'Tangerine', cursive;
     font-size: 10vw;
     padding: 1vw 0 2vw 35vw;
     color: #5E7A8B;
     text-shadow: 2px 2px #0B2433;
+*/
 
 
 }
@@ -39,10 +41,12 @@ h1 {
 }
 
 h2 {
+    /*
     font-family: 'Open-Sans', sans-serif;
     padding: 2vw 0 2vw 10vw;
     color: #C3B299;
     font-family: 'Montserrat';
+*/
 }
 
 p {
@@ -54,43 +58,63 @@ p {
 
 .myheader h1 {
     margin: 0;
-    padding: 2vw 0 5vw 2vw;
+    padding: 3vw 0 1vw 2vw;
+    font-family: 'Poiret One', cursive;
 
 }
+
+.myheader h2 {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-size: 3vw;
+    padding: 0vw 0 0vw 2vw;
+}
+
+.myheader img {
+    display: inline-block;
+}
+
 
 .myheader {
     display: block;
     background-color: #899EAA;
-    border-bottom-style: solid;
     background-image: linear-gradient(white, #899EAA);
-    height: 17vw;
+    height: 15vw;
+    text-align: center;
 }
 
 @media screen and (min-width: 600px) {
     .myheader {
         height: 12vw;
+
+    }
+
+    .myheader .text-box {
+        text-align: center;
     }
 
     .myheader h1 {
-        font-size: 120px;
-        padding: 2vw 0 2vw;
+        font-size: 3vw;
+    }
+
+    .myheader h2 {
+        margin: 0.5vw 0 0 0;
+        font-size: 2vw;
+    }
+
+    .myheader figure {
+        position: relative;
+        left: 18vw;
+        top: 5vw;
+        width: 70%;
     }
 
     .myheader img {
         display: block;
-        position: static;
-        bottom: 2vw;
-
-
-
-
+        max-width: 50%;
     }
 
-    .myheader img {}
-}
 
-.myheader .hurtig {
-    position: absolute;
 }
 
 .myheader img {
@@ -189,7 +213,7 @@ nav.menubar a:hover {
     nav.menubar {
         display: inline-block;
         position: absolute;
-        padding: 0 5vw 0 0;
+        padding: 0 2vw 0 0;
         width: 60%;
         top: 12vw;
         right: 20vw;
@@ -288,6 +312,10 @@ nav.menubar a:hover {
     flex-direction: row;
     border-bottom: 1px solid #C3B299;
     padding: 0 0 5vw 0;
+    background-color: #E1E6E9;
+    color: #5E7A8B;
+    border-radius: 1vw;
+
 
 }
 
@@ -298,23 +326,21 @@ nav.menubar a:hover {
     flex-grow: 2;
     flex-basis: 200px;
     margin: 1vw;
+
 }
 
 
 
 #tema1 .column_top {
     display: inline-block;
-    background-color: lightgray;
-    color: #5E7A8B;
     flex-grow: 1;
-    flex-basis: 300px;
-    border-radius: 1vw;
+    flex-basis: 400px;
+
     border: 2vw;
     padding: 0 3vw 2vw;
 }
 
 #tema1 .column_middle {
-    background-color: lightgray;
     color: #5E7A8B;
     flex-grow: 1;
     flex-basis: 300px;
@@ -346,8 +372,7 @@ nav.menubar a:hover {
 }
 
 #tema1 .column_bottom {
-    background-color: lightgray;
-    color: 5E7A8B;
+    color: #5E7A8B;
     flex-grow: 1;
     flex-basis: 300px;
     border-radius: 1vw;
@@ -355,7 +380,6 @@ nav.menubar a:hover {
 }
 
 #tema1 .column_slideshow {
-    background-color: lightgray;
     color: #FAF3DD;
     flex-grow: 2;
     flex-basis: 300px;
@@ -364,6 +388,7 @@ nav.menubar a:hover {
     padding: 2vw;
     margin: 1vw;
     max-width: 500px;
+
 }
 
 .slideshow_moodboard {
@@ -491,27 +516,21 @@ nav.menubar a:hover {
 
 /******** TEMA 2 *********/
 
-/*
+
 #tema2 .container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    border-bottom: 1px solid #C3B299;
-    padding: 0 0 5vw 0;
+    color: #5E7A8B;
+    flex-direction: row;
 
 }
-*/
 
 #tema2 .column_top {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     flex-grow: 1;
-    flex-basis: 200px;
-    margin: 1vw;
+    flex-basis: 400px;
     justify-content: space-between;
-    background-color: #97B1A6;
-    color: #FAF3DD;
+    background-color: #E1E6E9;
     border-radius: 1vw;
 }
 
@@ -523,20 +542,26 @@ nav.menubar a:hover {
     padding: 2vw;
 }
 
-@media screen and (max-width: 800px) {
-    #tema2 .container {
-        flex-direction: column;
-        justify-content: center;
+@media screen and (min-width: 800px) {
+    #tema2 .container {}
+
+    #tema2 .column_top {}
+
+    #tema2 .column_topleft {
+        max-width: 500px;
     }
 
-    #tema2 .column_middleright {
-        position: relative;
-        right: 8vw;
-    }
 
     #tema2 .column_topright {
-        position: relative;
-        left: 8vw;
+        margin: auto;
+    }
+
+    #tema2 .column_bottom {
+        flex-direction: column;
+    }
+
+    #tema2 .column_middleleft {
+        max-width: 500px;
     }
 
 }
@@ -547,10 +572,9 @@ nav.menubar a:hover {
     flex-direction: row-reverse;
     flex-grow: 1;
     flex-basis: 200px;
-    margin: 1vw;
+    margin: 2vw 0 0 0;
     justify-content: space-between;
-    background-color: #97B1A6;
-    color: #FAF3DD;
+    background-color: #E1E6E9;
     border-radius: 1vw;
 }
 
@@ -566,7 +590,8 @@ nav.menubar a:hover {
 #tema2 img {
     border: 1px solid #ddd;
     border-radius: 4px;
-    padding: 5px;
+    padding: 6px;
+    margin: 1vw;
     min-width: 400px;
     max-width: 500px;
 
@@ -576,8 +601,7 @@ nav.menubar a:hover {
 #tema2 .column_bottom {
     display: flex;
     flex-wrap: wrap;
-    background-color: #97B1A6;
-    color: #FAF3DD;
+    background-color: #E1E6E9;
     border-radius: 1vw;
     justify-content: center;
     margin: 2vw;
@@ -587,38 +611,12 @@ nav.menubar a:hover {
 }
 
 #tema2 .column_text {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
-    flex-direction: row;
     flex-grow: 2;
     flex-basis: 200px;
     margin: 1vw;
     justify-content: space-between;
-}
-
-#tema2 .text_left {
-    display: inline-block;
-    background-color: #97B1A6;
-    color: #FAF3DD;
-    flex-grow: 1;
-    flex-basis: 400px;
-    border-radius: 1vw;
-    border: 2vw;
-    padding: 0 3vw 2vw;
-    max-width: 500px;
-}
-
-#tema2 .text_right {
-    display: inline-block;
-    background-color: #97B1A6;
-    color: #FAF3DD;
-    flex-grow: 1;
-    flex-basis: 400px;
-    border-radius: 1vw;
-    border: 2vw;
-    padding: 0 3vw 2vw;
-    margin: 3vw 0 5vw;
-    max-width: 500px;
 }
 
 /*********** TEMA 3 ***************/
@@ -629,15 +627,20 @@ nav.menubar a:hover {
     flex-direction: row;
     flex-grow: 1;
     flex-basis: 200px;
-    margin: 1vw;
     justify-content: space-between;
-    background-color: #97B1A6;
-    color: #FAF3DD;
+    background-color: #E1E6E9;
+    color: #5E7A8B;
     border-radius: 1vw;
 }
 
 #tema3 .text_box {
     padding: 2vw;
+    max-width: 600px;
+}
+
+#tema3 .text_box2 {
+    padding: 2vw;
+    max-width: 600px;
 }
 
 #tema3 .column_images {
@@ -657,6 +660,8 @@ nav.menubar a:hover {
         max-width: 50vw;
 
     }
+
+    #tema3 .column_left .text_box {}
 }
 
 #tema3 .column_right {
@@ -666,8 +671,8 @@ nav.menubar a:hover {
     flex-grow: 1;
     flex-basis: 200px;
     margin: 1vw;
-    background-color: #97B1A6;
-    color: #FAF3DD;
+    background-color: #E1E6E9;
+    color: #5E7A8B;
     border-radius: 1vw;
 }
 
@@ -675,33 +680,74 @@ nav.menubar a:hover {
     padding: 2vw;
     min-width: 400px;
     max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #tema3 .column_sharing img {
-    padding: 2vw;
     width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*********** TEMA 4 **************/
 
-#tema4 .container {}
-
-#tema4 .column {}
-
-#tema4 .column_right {
-    background-color: #97B1A6;
-    color: #FAF3DD;
+#tema4 .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-bottom: 1px solid #C3B299;
+    background-color: #E1E6E9;
+    color: #5E7A8B;
     border-radius: 1vw;
-    padding: 2vw;
-    margin: 1vw;
 
 }
 
-#tema4 .column_left {
-    background-color: #97B1A6;
-    color: #FAF3DD;
-    border-radius: 1vw;
+#tema4 .text_column {
     padding: 2vw;
-    margin: 1vw;
+    flex-grow: 2;
+    flex-basis: 500px;
+}
 
+#tema4 .slide_column {
+    width: 70%;
+    margin: auto;
+    flex-grow: 3;
+    flex-basis: 300px;
+
+
+}
+
+#tema4 .slide_column img {
+    flex-grow: 2;
+    flex-basis: 300px;
+    max-width: 400px;
+
+
+}
+
+#tema4 .image-left {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+
+#tema4 .column {}
+
+
+
+
+
+@media screen and (min-width: 800px) {
+    #tema4 .container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #tema4 .slide_column img {}
 }
