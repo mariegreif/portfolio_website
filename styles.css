@@ -360,8 +360,6 @@ nav.menubar a:hover {
 }
 
 
-
-
 /******** TEMA 1 ************/
 
 #tema1 .container {
@@ -726,11 +724,7 @@ nav.menubar a:hover {
 
 #tema3 .column_left {
     display: flex;
-    border-radius: 1vw;
-    border-radius: 1vw;
 
-    padding: 0vw;
-    margin: 0vw;
     flex-direction: column;
 
 
@@ -742,6 +736,10 @@ nav.menubar a:hover {
     max-width: 700px;
 
 
+}
+
+#tema3 .text_box2 {
+    padding: 0 4vw 4vw;
 }
 
 #tema3 .text_box a {
@@ -770,10 +768,7 @@ nav.menubar a:hover {
     color: #FCFCFC;
 }
 
-#tema3 .text_box2 {
-    padding: 2vw;
-    max-width: 600px;
-}
+
 
 #tema3 .column_images {
     width: 500px;
@@ -782,51 +777,7 @@ nav.menubar a:hover {
 
 }
 
-#tema3 .column_images img {
-    width: 100%;
-    height: auto;
-    padding: 1vw;
-}
 
-@keyframes slide_ani {
-    25% {
-        opacity: 1;
-    }
-
-    75% {
-        opacity: 0;
-    }
-}
-
-#tema3 .column_images img:nth-child(2) {
-    animation-delay: 0s;
-}
-
-#tema3 .column_images img:nth-child(1) {
-    animation-delay: 5s;
-}
-
-
-
-#tema3 .column_right {}
-
-#tema3 .column_left {}
-
-#tema3 .column_sharing {
-    padding: 2vw;
-    width: 600px;
-    overflow: hidden;
-    position: relative;
-}
-
-#tema3 .column_sharing img {
-    position: absolute;
-    animation: slide_ani 10s infinite;
-    opacity: 0;
-    width: 100%;
-    height: auto;
-    right: 0;
-}
 
 #tema3 .bottom_links {
     display: flex;
@@ -853,15 +804,17 @@ nav.menubar a:hover {
     color: #FCFCFC;
 }
 
+#tema3 .column_right {
+    display: flex;
+}
+
 @media screen and (min-width: 800px) {
     #tema3 .container {
         justify-content: center;
     }
 
-    #tema3 .column_sharing img {
-        max-width: 50vw;
 
-    }
+
 
     #tema3 .column_images {}
 
@@ -895,13 +848,8 @@ nav.menubar a:hover {
 /*********** TEMA 4 **************/
 
 #tema4 .container {
-    /*
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-*/
     border-bottom-style: 1px solid #A0C4C2;
-
+    padding: 2vw;
 
 
 }
