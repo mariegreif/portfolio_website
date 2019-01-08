@@ -55,6 +55,8 @@ p {
 
 }
 
+
+
 @media screen and (min-width: 600px) {
     h2 {
         font-family: 'Poiret One', cursive;
@@ -99,7 +101,7 @@ p {
 }
 
 .myheader img {
-    display: inline-block;
+    display: none;
 }
 
 
@@ -379,25 +381,42 @@ nav.menubar a:hover {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     display: inline-block;
-    border-radius: 1vw;
+    border-radius: 2vw;
     max-width: 60vw;
-    margin: 1vw;
-    padding: 2vw;
-
+    margin: 2vw;
+    padding: 3vw;
 
 }
 
 #tema1 .column_bottom a:hover {
     text-decoration: none;
-    background-color: #F7D08A;
-    color: #FAF3DD;
+    background-color: #A0C4C2;
+    color: #FCFCFC;
 
+
+}
+
+@media screen and (min-width: 800px) {
+
+    #tema1 .column_bottom {
+        display: flex;
+
+
+    }
+
+    #tema1 .column_bottom a {
+        padding: 2vw;
+        font-size: 1.1vw;
+
+    }
 }
 
 #tema1 .column_bottom {
     flex-grow: 1;
-    flex-basis: 300px;
+    flex-basis: 200px;
     border-radius: 1vw;
+    text-align: center;
+
 }
 
 #tema1 .column_slideshow {
@@ -538,7 +557,6 @@ nav.menubar a:hover {
 
 
 #tema2 .container {
-    flex-direction: row;
     border-bottom: 1px solid #A0C4C2;
 
 }
@@ -554,60 +572,79 @@ nav.menubar a:hover {
 
 #tema2 .column_topleft {
     padding: 2vw;
+    text-align: center;
 }
 
 #tema2 .column_topright {
-    padding: 2vw;
+    padding: 1vw;
+    margin-left: 0;
 }
 
-@media screen and (min-width: 800px) {
-    #tema2 .container {}
-
-    #tema2 .column_top {}
-
-    #tema2 .column_topleft {
-        max-width: 500px;
-    }
-
-
-    #tema2 .column_topright {
-        margin: auto;
-    }
-
-    #tema2 .column_bottom {
-        flex-direction: column;
-    }
-
-    #tema2 .column_middleleft {
-        max-width: 500px;
-    }
-
+#tema2 .column_topleft a {
+    text-decoration: none;
+    background-color: #BFD7D7;
+    color: #FCFCFC;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: inline-block;
+    border-radius: 2vw;
+    max-width: 60vw;
+    margin: 2vw;
+    padding: 3vw;
 }
 
-#tema2 .column_middle {
+#tema2 .column_topleft a:hover {
+    text-decoration: none;
+    background-color: #A0C4C2;
+    color: #FCFCFC;
+}
+
+#tema2 .column_bottom {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-grow: 1;
     flex-basis: 200px;
-    margin: 2vw 0 0 0;
     justify-content: space-between;
     border-radius: 1vw;
+    text-align: center;
 }
 
-#tema2 .column_middleleft {
+#tema2 .column_bottomleft {
     padding: 2vw;
+    max-width: 600px;
 }
 
-#tema2 .column_middleright {
+#tema2 .column_bottomright {
     padding: 2vw;
+    max-width: 600px;
+}
+
+
+#tema2 .column_bottomleft a {
+    text-decoration: none;
+    background-color: #BFD7D7;
+    color: #FCFCFC;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: inline-block;
+    border-radius: 2vw;
+    max-width: 60vw;
+    margin: 2vw;
+    padding: 3vw;
+
+}
+
+#tema2 .column_bottom a:hover {
+    text-decoration: none;
+    background-color: #A0C4C2;
+    color: #FCFCFC;
+
 
 }
 
 #tema2 img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 6px;
+    padding: 2px;
     margin: 1vw;
     min-width: 400px;
     max-width: 500px;
@@ -615,25 +652,67 @@ nav.menubar a:hover {
 
 }
 
+
 #tema2 .column_bottom {
     display: flex;
     flex-wrap: wrap;
-    border-radius: 1vw;
-    justify-content: center;
-    margin: 2vw;
-    padding: 2vw;
-    justify-content: space-between;
-
-}
-
-#tema2 .column_text {
-    display: block;
-    flex-wrap: wrap;
-    flex-grow: 2;
+    flex-direction: row;
+    flex-grow: 1;
     flex-basis: 200px;
-    margin: 1vw;
-    justify-content: space-between;
+    border-radius: 1vw;
+
 }
+
+
+
+@media screen and (min-width: 800px) {
+    #tema2 .column_topleft a {
+        padding: 2vw;
+        font-size: 1.1vw;
+    }
+
+    #tema2 .column_top {
+        margin: 0;
+    }
+
+    #tema2 .column_topright {}
+
+
+    #tema2 .column_topleft {
+        max-width: 500px;
+        text-align: center;
+
+    }
+
+    #tema2 .column_bottomleft {
+        max-width: 600px;
+        text-align: center;
+
+    }
+
+    #tema2 .column_bottomright {
+        max-width: 600px;
+    }
+
+    #tema2 .column_topright {
+        margin: auto;
+    }
+
+    #tema2 .column_bottom {}
+
+
+    #tema2 .column_bottomleft a {
+        padding: 1.5vw;
+        font-size: 1.1vw;
+        border-radius: 1vw;
+        margin: 1vw;
+
+    }
+
+
+}
+
+
 
 /*********** TEMA 3 ***************/
 
@@ -653,7 +732,30 @@ nav.menubar a:hover {
 
 #tema3 .text_box {
     padding: 2vw;
-    max-width: 600px;
+    max-width: 700px;
+
+}
+
+#tema3 .text_box a {
+    text-decoration: none;
+    background-color: #BFD7D7;
+    color: #FCFCFC;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: inline-block;
+    border-radius: 2vw;
+    max-width: 60vw;
+    margin: 2vw;
+    padding: 3vw;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+#tema3 .text_box a:hover {
+    text-decoration: none;
+    background-color: #A0C4C2;
+    color: #FCFCFC;
 }
 
 #tema3 .text_box2 {
@@ -666,20 +768,6 @@ nav.menubar a:hover {
     min-width: 400px;
     max-width: 500px;
 
-}
-
-@media screen and (max-width: 800px) {
-    #tema3 .container {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #tema3 .column_sharing img {
-        max-width: 50vw;
-
-    }
-
-    #tema3 .column_left .text_box {}
 }
 
 #tema3 .column_right {
@@ -708,6 +796,57 @@ nav.menubar a:hover {
     margin-right: auto;
 }
 
+#tema3 .bottom_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#tema3 .bottom_links a {
+    text-decoration: none;
+    background-color: #BFD7D7;
+    color: #FCFCFC;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: inline-block;
+    border-radius: 1vw;
+    max-width: 60vw;
+    margin: 2vw;
+    padding: 3vw;
+}
+
+#tema3 .bottom_links a:hover {
+    text-decoration: none;
+    background-color: #A0C4C2;
+    color: #FCFCFC;
+}
+
+@media screen and (min-width: 800px) {
+    #tema3 .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #tema3 .column_sharing img {
+        max-width: 50vw;
+
+    }
+
+    #tema3 .text_box a {
+        padding: 2vw;
+        border-radius: 2vw;
+        margin: 1vw;
+    }
+
+    #tema3 .bottom_links a {
+        padding: 2vw;
+        border-radius: 2vw;
+        margin: 1vw;
+    }
+}
+
+
+
 /*********** TEMA 4 **************/
 
 #tema4 .container {
@@ -731,10 +870,30 @@ nav.menubar a:hover {
 #tema4 .text_column {
     padding: 2vw;
     max-width: 600px;
+    text-align: center;
+}
+
+#tema4 .column_links a {
+    text-decoration: none;
+    background-color: #BFD7D7;
+    color: #FCFCFC;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: inline-block;
+    border-radius: 2vw;
+    max-width: 60vw;
+    margin: 2vw;
+    padding: 3vw;
+}
+
+#tema4 .column_links a:hover {
+    text-decoration: none;
+    background-color: #A0C4C2;
+    color: #FCFCFC;
 }
 
 #tema4 .img_column {
-    width: 300px;
+    width: 350px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -746,6 +905,31 @@ nav.menubar a:hover {
     /*    width: 100%;*/
 }
 
+#tema4 .last_links {
+    flex-grow: 1;
+    flex-basis: 200px;
+    border-radius: 1vw;
+    text-align: center;
+}
+
+#tema4 .last_links a {
+    text-decoration: none;
+    background-color: #BFD7D7;
+    color: #FCFCFC;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: inline-block;
+    border-radius: 2vw;
+    max-width: 60vw;
+    margin: 2vw;
+    padding: 3vw;
+}
+
+#tema4 .last_links a:hover {
+    text-decoration: none;
+    background-color: #A0C4C2;
+    color: #FCFCFC;
+}
 
 #tema4 .image-left {
     width: 300px;
@@ -761,6 +945,25 @@ nav.menubar a:hover {
 
 
 @media screen and (min-width: 800px) {
+    #tema4 .last_links {
+        display: flex;
+    }
+
+    #tema4 .column_links {
+        display: flex;
+    }
+
+    #tema4 .last_links a {
+        padding: 2vw;
+        font-size: 1.1vw;
+        margin: 3vw 1vw;
+    }
+
+
+    #tema4 .column_links a {
+        padding: 2vw;
+        font-size: 1.1vw;
+    }
 
     #tema4 .last_column {}
 
