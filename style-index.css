@@ -16,15 +16,17 @@ section {
 
 body,
 html {
-    background-color: #F4F4F1;
+    background-color: #DDE9E6;
     height: 100%;
     margin: 0;
 }
 
-h2 {
-    font-family: 'Tangerine';
-    font-size: 7vw;
-    color: #5E7A8B;
+h1 {
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 1px 1px 2px #6A8F8C;
+    color: #DDE9E6;
+    font-size: 9vw;
+
 }
 
 h3 {
@@ -39,6 +41,8 @@ p {
 
 
 /********* FORSIDE / INDEX *********/
+
+.text-box {}
 
 
 
@@ -62,6 +66,7 @@ p {
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
+    width: 400px;
 
 }
 
@@ -74,18 +79,18 @@ p {
 
 #menu_dropdown {
     display: inline-block;
-    background-color: white;
-    width: 15%;
+    background-color: #BFD7D7;
+    width: 25vw;
     text-align: center;
-    padding: 1vw;
+    padding: 2vw;
     position: absolute;
     top: 70%;
-    left: 45%;
-    border-radius: 1vw;
+    left: 35%;
+    border-radius: 2vw;
     box-sizing: border-box;
     cursor: pointer;
-    font-family: 'Open Sans', sans-serif;
-    outline-color: lightgray;
+    font-family: 'Raleway', sans-serif;
+    color: #FCFCFC;
 
 }
 
@@ -94,26 +99,64 @@ p {
     list-style-type: none;
     transition: 0.5s;
     position: absolute;
-    top: 73%;
-    left: 36vw;
-    background-color: white;
+    top: 99vw;
+    left: 28.5vw;
+    background-color: #BFD7D7;
     box-sizing: border-box;
-    padding-right: 1.5vw;
-    padding-bottom: 2vw;
+    padding-right: 5vw;
+    padding-bottom: 5vw;
     padding-top: 1vw;
     border-radius: 0 0 1vw 1vw;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: #FCFCFC;
 
 }
 
 #drop-button a {
     text-decoration: none;
     color: black;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: #FCFCFC;
 }
 
 #drop-button a:hover {
-    color: bisque;
-    font-family: 'Open Sans', sans-serif;
+
+    color: #6A8F8C;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+@media screen and (min-width: 600px) {
+    .text-box {
+        width: 100%;
+
+    }
+
+    .image-bg {
+        border-radius: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    #menu_dropdown {
+        width: 15vw;
+        left: 45vw;
+        font-size: 2vw;
+    }
+
+    #drop-button {
+        top: 37vw;
+        left: 45vw;
+        width: 15vw;
+        height: 10vw;
+
+    }
+
+    #drop-button a {
+        padding: 1vw;
+        font-size: 1.3vw;
+    }
+
+
 
 }

@@ -89,12 +89,14 @@ p {
     padding: 3vw 0 1vw 2vw;
     font-family: 'Poiret One', cursive;
     border-bottom-style: hidden;
-    font-size: 5vw;
+    font-size: 6vw;
+    text-shadow: 2px 2px 4px #FCFCFC;
 
 }
 
 .myheader h2 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poiret One', cursive;
+    text-shadow: 1px 1px 2px #FCFCFC;
     margin: 0;
     font-size: 3vw;
     padding: 0vw 0 0vw 2vw;
@@ -108,7 +110,7 @@ p {
 .myheader {
     display: block;
     background-color: #BFD7D7;
-    background-image: linear-gradient(DDE9E6, #BFD7D7);
+    background-image: linear-gradient(#DDE9E6, #BFD7D7);
     height: 15vw;
     text-align: center;
 }
@@ -120,16 +122,17 @@ p {
     }
 
     .myheader .text-box {
-        text-align: center;
+        text-align: left;
     }
 
     .myheader h1 {
-        font-size: 3vw;
+        font-size: 5vw;
+        padding: 3vw 0 0 6vw;
     }
 
     .myheader h2 {
-        margin: 0.5vw 0 0 0;
         font-size: 2vw;
+        padding: 0 0 0 6vw;
     }
 
     .myheader figure {
@@ -185,7 +188,7 @@ p {
 }
 
 nav.menubar {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(70, 116, 112, 0.5);
     position: fixed;
     right: 1vw;
     top: 12.1vw;
@@ -203,7 +206,7 @@ nav.menubar a {
     display: block;
     padding: 15px;
     text-decoration: none;
-    font-family: 'Open-Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 19px;
     transition: 0.5s;
 
@@ -250,6 +253,7 @@ nav.menubar a:hover {
         border-top-left-radius: 0;
         border-top-right-radius: 0;
         border-bottom-right-radius: 20px;
+        text-align: center;
 
     }
 
@@ -265,16 +269,17 @@ nav.menubar a:hover {
 
 /********** OM MIG **********/
 
+
+
 #cv .container {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid lightgrey;
     margin: 3vw;
 
 }
 
 #cv .column_left {
-    background-color: #5E7A8B;
+    background-color: #6A8F8C;
     padding: 2vw;
     flex-grow: 1;
     flex-basis: 200px;
@@ -290,11 +295,12 @@ nav.menubar a:hover {
     flex-grow: 3;
     flex-basis: 500px;
     border-style: solid;
+    border-color: #FCFCFC;
 }
 
 #cv .text-box {
-    background-color: lightgray;
-    color: #5E7A8B;
+    background-color: #DDE9E6;
+    color: #DDE9E6;
     max-width: 50%;
     max-width: 600px;
     flex-grow: 1;
@@ -304,35 +310,57 @@ nav.menubar a:hover {
 }
 
 #cv .list {
-    padding: 7vw 0 0 18vw;
+    padding: 5vw 0 0 25vw;
+
 }
 
 #cv li {
-    padding: 2vw;
-    font-family: 'Montserrat';
-    color: lightgray;
+    padding: 2vw 0 1.5vw;
+    font-family: 'Raleway', sans-serif;
+    color: #FCFCFC;
+}
+
+#cv .list2 {
+    background-color: #6A8F8C;
+    text-align: center;
+}
+
+#cv .list2 p {
+    padding: 1vw 0 0 2vw;
+    color: #FCFCFC;
+
 }
 
 @media screen and (min-width: 800px) {
     #cv .container {
         flex-direction: row;
         justify-content: center;
+        padding: 2vw 0 0 0;
     }
 
     #cv .list {
         padding: 0;
     }
+
+    #cv .list2 {
+        text-align: left;
+        padding: 3vw;
+
+    }
+
+    #cv .list2 p {
+        text-align: left;
+        padding: 0;
+        margin: 1vw;
+        font-size: 1vw;
+        font-family: 'Raleway', sans-serif;
+        color: #FCFCFC;
+
+    }
 }
 
-#cv .list2 {
-    background-color: #95A4AC;
-    color: lightgray;
-}
 
-#cv p {
-    font-family: 'Montserrat';
-    color:
-}
+
 
 /******** TEMA 1 ************/
 
@@ -430,43 +458,7 @@ nav.menubar a:hover {
 
 }
 
-.slideshow_moodboard {
-    width: 100%;
-    padding-bottom: 80%;
-    padding-left: 5%;
-    position: relative;
 
-}
-
-.slideshow_moodboard img {
-    position: absolute;
-    animation: slideshow_animation_mood 15s infinite;
-    opacity: 1;
-    width: 100%;
-    flex-grow: 1;
-    flex-basis: 500px;
-    max-width: 400px;
-
-}
-
-@keyframes slideshow_animation_mood {
-    25% {
-        opacity: 1;
-    }
-
-    75% {
-        opacity: 0;
-    }
-}
-
-
-.slideshow_moodboard img:nth-child(1) {
-    animation-delay: 5s;
-}
-
-.slideshow_moodboard img:nth-child(2) {
-    animation-delay: 10s;
-}
 
 
 .slideshow_photoshop {
@@ -544,6 +536,16 @@ nav.menubar a:hover {
 
 }
 
+@keyframes slideshow_animation_mood {
+    25% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0;
+    }
+}
+
 .slideshow_ikon img:nth-child(2) {
     animation-delay: 5s;
 }
@@ -559,25 +561,25 @@ nav.menubar a:hover {
 #tema2 .container {
     border-bottom: 1px solid #A0C4C2;
 
+
 }
 
 #tema2 .column_top {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    flex-grow: 1;
-    flex-basis: 400px;
-    border-radius: 1vw;
+
 }
 
 #tema2 .column_topleft {
     padding: 2vw;
-    text-align: center;
+
 }
 
 #tema2 .column_topright {
     padding: 1vw;
-    margin-left: 0;
+
+
 }
 
 #tema2 .column_topleft a {
@@ -619,6 +621,8 @@ nav.menubar a:hover {
     padding: 2vw;
     max-width: 600px;
 }
+
+
 
 
 #tema2 .column_bottomleft a {
@@ -722,17 +726,21 @@ nav.menubar a:hover {
 
 #tema3 .column_left {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    flex-grow: 1;
-    flex-basis: 200px;
-    justify-content: space-between;
     border-radius: 1vw;
+    border-radius: 1vw;
+
+    padding: 0vw;
+    margin: 0vw;
+    flex-direction: column;
+
+
+
 }
 
 #tema3 .text_box {
     padding: 2vw;
     max-width: 700px;
+
 
 }
 
@@ -745,11 +753,15 @@ nav.menubar a:hover {
     display: inline-block;
     border-radius: 2vw;
     max-width: 60vw;
-    margin: 2vw;
+    margin: 1vw;
     padding: 3vw;
-    flex-direction: column;
     text-align: center;
 
+
+}
+
+#tema3 .linker {
+    text-align: center;
 }
 
 #tema3 .text_box a:hover {
@@ -764,36 +776,56 @@ nav.menubar a:hover {
 }
 
 #tema3 .column_images {
-    padding: 2vw;
-    min-width: 400px;
-    max-width: 500px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
-#tema3 .column_right {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    flex-grow: 1;
-    flex-basis: 200px;
-    margin: 1vw;
-    border-radius: 1vw;
+#tema3 .column_images img {
+    width: 100%;
+    height: auto;
+    padding: 1vw;
 }
+
+@keyframes slide_ani {
+    25% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0;
+    }
+}
+
+#tema3 .column_images img:nth-child(2) {
+    animation-delay: 0s;
+}
+
+#tema3 .column_images img:nth-child(1) {
+    animation-delay: 5s;
+}
+
+
+
+#tema3 .column_right {}
+
+#tema3 .column_left {}
 
 #tema3 .column_sharing {
     padding: 2vw;
-    min-width: 400px;
-    max-width: 500px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 600px;
+    overflow: hidden;
+    position: relative;
 }
 
 #tema3 .column_sharing img {
-    width: 400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    animation: slide_ani 10s infinite;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+    right: 0;
 }
 
 #tema3 .bottom_links {
@@ -823,7 +855,6 @@ nav.menubar a:hover {
 
 @media screen and (min-width: 800px) {
     #tema3 .container {
-        flex-direction: column;
         justify-content: center;
     }
 
@@ -832,10 +863,24 @@ nav.menubar a:hover {
 
     }
 
+    #tema3 .column_images {}
+
+    #tema3 .column_images img {
+        max-width: 600px;
+
+    }
+
+    #tema3 .column_left {
+        flex-direction: row;
+
+    }
+
+    #tema3 .column_left .linker {}
+
     #tema3 .text_box a {
         padding: 2vw;
         border-radius: 2vw;
-        margin: 1vw;
+        margin: 0 0.8vw;
     }
 
     #tema3 .bottom_links a {
